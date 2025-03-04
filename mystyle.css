@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #4e4e4e;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -15,9 +15,12 @@ header {
 .mynav {
     background-color: #333;
     color: #fff;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
+.navbar-nav > li > a:hover {
+    color: #fff !important; /* Change to desired color */
+}
 
 main {
     padding: 1rem;
@@ -31,4 +34,10 @@ footer {
     position:relative;
     width: 100%;
     bottom: 0;
+}
+
+#cv {
+    /* Add your styles here */
+    color: #afafaf;
+    background-color: #333;
 }
