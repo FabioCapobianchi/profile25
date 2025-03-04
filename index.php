@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="mystyle.css">
 </head>
@@ -12,7 +12,7 @@
         <nav class="navbar navbar-default mynav">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Profile</a>
+                    <a class="navbar-brand" href="#">My Website</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#">Home</a></li>
@@ -22,7 +22,7 @@
                 </ul>
             </div>
         </nav>
-        <h1>Welcome to My Profile</h1>
+        <h1>Welcome to My Website</h1>
     </header>
     <main>
         <p>This is a basic website structure.</p>
@@ -71,45 +71,44 @@
         </div>
     </div>
     <div class="container">
-        <table class="table table-bordered table-striped table-hover">
-            <caption>Table Caption</caption>
+        <h2>Data Table</h2>
+        <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Header 1</th>
-                    <th>Header 2</th>
-                    <th>Header 3</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Data 1</td>
-                    <td>Data 2</td>
-                    <td>Data 3</td>
-                </tr>
-                <tr>
-                    <td>Data 4</td>
-                    <td>Data 5</td>
-                    <td>Data 6</td>
-                </tr>
-                <tr>
-                  <td>Data 7</td>
-                  <td>Data 8</td>
-                  <td>Data 9</td>
-                </tr>
-              <tr>
-                  <td>Data 10</td>
-                  <td>Data 11</td>
-                  <td>Data 12</td>
-              </tr>
+                <?php
+                // Database connection
+                $servername = "localhost";
+                $username = "username";
+                $password = "password";
+                $dbname = "database";
+
+                $conn = new mysqli($servername, $username, $password, $dbname);
+
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                }
+
+                $sql = "SELECT id, name, email FROM users";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo "<tr><td>" . $row["id"]. "</td><td>" . $row["name"]. "</td><td>" . $row["email"]. "</td></tr>";
+                    }
+                } else {
+                    echo "<tr><td colspan='3'>No data found</td></tr>";
+                }
+
+                $conn->close();
+                ?>
             </tbody>
         </table>
-    </div>
-    <div class="container">
-      <h2>Responsive Embed</h2>
-      <p>Create a responsive video and scale it nicely to the parent element with an 16:9 aspect ratio</p>
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-      </div>
     </div>
     <footer>
         <p>&copy; 2023 My Website</p>
