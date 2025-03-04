@@ -2,24 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #E9F1FA; /* Light blue background */
 }
 
 header {
-    background-color: #4e4e4e;
-    color: #fff;
+    background-color: #00ABE4; /* Bright blue */
+    color: #FFFFFF; /* White text */
     padding: 1rem 0;
     text-align: center;
 }
 
 .mynav {
-    background-color: #333;
-    color: #fff;
+    background-color: #00ABE4; /* Bright blue */
+    color: #FFFFFF; /* White text */
     padding-right: 5%;
 }
 
+.navbar-nav > li > a {
+    color: #FFFFFF !important; /* White text */
+}
+
 .navbar-nav > li > a:hover {
-    color: #fff !important; /* Change to desired color */
+    color: #E9F1FA !important; /* Light blue on hover */
 }
 
 main {
@@ -27,17 +31,29 @@ main {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #00ABE4; /* Bright blue */
+    color: #FFFFFF; /* White text */
     text-align: center;
     padding: 1rem 0;
-    position:relative;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
 
 #cv {
-    /* Add your styles here */
-    color: #afafaf;
-    background-color: #333;
+    color: #FFFFFF; /* White text */
+    background-color: #00ABE4; /* Bright blue */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#cv:hover {
+    background-color: #E9F1FA; /* Light blue on hover */
+    color: #00ABE4; /* Bright blue text on hover */
+}
+
+.imagem {
+    width: 100%;
+    height: auto;
 }
