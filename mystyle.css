@@ -57,3 +57,21 @@ footer {
     width: 100%;
     height: auto;
 }
+
+#drop {
+    background-color: #00ABE4; /* Bright blue */
+    color: #FFFFFF; /* White text */
+}
+
+#dropdown {
+    background-color: #00ABE4; /* Bright blue */
+    color: #FFFFFF; /* White text */
+}
+
+.dropdown-menu > li > a {
+    color: #FFFFFF !important; /* White text */
+}
+
+.dropdown-menu > li > a:hover {
+    color: #00ABE4 !important; /* White text */
+}
