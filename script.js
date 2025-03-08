@@ -56,7 +56,7 @@ let warn =
 
 submit.addEventListener("click",(e) => {
         e.preventDefault();
-        showToast("Article Submitted Successfully","success",5000);
+        showToast("Login Successfully","info",5000);
     });
 
 information.addEventListener("click",(e) => {

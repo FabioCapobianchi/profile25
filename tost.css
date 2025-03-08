@@ -44,7 +44,7 @@ button.custom-toast:hover {
 }
 
 button.success-toast {
-    background-color: #2ecc71;
+    background-color: #00ABE4;
 }
 
 button.danger-toast {
@@ -114,7 +114,7 @@ button.warning-toast {
 }
 
 .toast.toast-success {
-    background: #95eab8;
+    background: #00ABE4;
 }
 
 .toast.toast-success .toast-progress {
