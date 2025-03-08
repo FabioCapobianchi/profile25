@@ -23,7 +23,8 @@ header {
 }
 
 .navbar-nav > li > a:hover {
-    color: #E9F1FA !important; /* Light blue on hover */
+    color: #00ABE4 !important; /* White text */
+    background-color: #FFFFFF !important; /* White background on hover */
 }
 
 main {
@@ -75,3 +76,4 @@ footer {
 .dropdown-menu > li > a:hover {
     color: #00ABE4 !important; /* White text */
 }
+
