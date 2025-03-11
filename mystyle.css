@@ -8,18 +8,20 @@ body {
 header {
     background-color: #00ABE4; /* Bright blue */
     color: #FFFFFF; /* White text */
-    padding: 1rem 0;
+    padding: 10px 10px 10px 10px;
     text-align: center;
 }
 
 .mynav {
     background-color: #00ABE4; /* Bright blue */
     color: #FFFFFF; /* White text */
-    padding-right: 5%;
+    border-color: #0090c1;
+    
 }
 
 .navbar-nav > li > a {
     color: #FFFFFF !important; /* White text */
+    border-radius: 10px;
 }
 
 .navbar-nav > li > a:hover {
@@ -77,3 +79,7 @@ footer {
     color: #00ABE4 !important; /* White text */
 }
 
+h3 {
+    color: #00ABE4; /* Bright blue */
+    padding: 10px 0px 10px 0px;
+}
